@@ -8,5 +8,5 @@ const content = fs.readFileSync(pathToFile, 'utf8');
 const words = [...new Set(content.split(' '))];
 
 words.forEach(e => {
-	console.log(`${e} ${calculateWords(e, content)}`);
+  console.log(`${e} ${calculateWords(e, content)}`);
 });
